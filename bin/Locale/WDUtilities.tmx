@@ -1,0 +1,4334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+	<header creationtool="Olifant" creationtoolversion="3.0.8.0" datatype="unknown" segtype="paragraph" adminlang="EN-US" srclang="EN-US" o-tmf="WD TXM XML Converter" creationdate="20130828T171418Z" creationid="WD" changedate="20131018T201948Z" changeid="vivianav">
+	</header>
+	<body>
+
+    <!-- New/modified trings requiring translations -->
+
+    <!-- Examples: '1 day', '2 days', '1 hour', '2 hours', '1 minute', '2 minutes', '1 second', '2 seconds' 
+           Reverse the order if the number comes after the time unit -->
+    <tu tuid="TIME_REMAINING_FORMAT_txt">
+      <tuv xml:lang="EN-US">
+        <seg>{0} {1}</seg>
+      </tuv>
+    </tu>
+
+    <!-- Examples: '1 minute and 15 seconds' (combination of two TIME_REMAINING_FORMAT_txt strings)-->
+    <tu tuid="TIME_REMAINING_COMBINATION_FORMAT_txt">
+      <tuv xml:lang="EN-US">
+        <seg>{0} and {1}</seg>
+      </tuv>
+    </tu>
+
+    <tu tuid="HOUR_txt">
+      <tuv xml:lang="EN-US">
+        <seg>hour</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HOURS_txt">
+      <tuv xml:lang="EN-US">
+        <seg>hours</seg>
+      </tuv>
+    </tu>
+    <tu tuid="MINUTE_txt">
+      <tuv xml:lang="EN-US">
+        <seg>minute</seg>
+      </tuv>
+    </tu>
+    <tu tuid="MINUTES_txt">
+      <tuv xml:lang="EN-US">
+        <seg>minutes</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SECOND_txt">
+      <tuv xml:lang="EN-US">
+        <seg>second</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SECONDS_txt">
+      <tuv xml:lang="EN-US">
+        <seg>seconds</seg>
+      </tuv>
+    </tu>
+    <tu tuid="CALCULATING_txt">
+      <tuv xml:lang="EN-US">
+        <seg>Calculating...</seg>
+      </tuv>
+    </tu>
+
+    <!-- End new/modified strings requiring translations -->
+
+    <!-- 
+      Errors's
+    
+      3 3 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1
+      1 0 9 8 7 6 5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0
+      +===+=+=+=======================+===============================+
+      |Sev|C|R|     Facility          |               Code            |
+      +===+=+=+=======================+===============================+
+
+      FACILITY_TRANSPORT = 0x0200
+      ex: 0x82000007 = File in use (locked)
+    -->
+	
+<tu tuid="ERROR_0x82000001">
+<tuv xml:lang="EN-US">
+<seg>The device was not found.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Zařízení nebylo nalezeno.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Das Gerät wurde nicht gefunden.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>No se encontró el dispositivo.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Le dispositif est introuvable.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Az eszköz nem található.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Dispositivo non trovato.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>デバイスが見つかりませんでした。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>장치가 없습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Enheten ble ikke funnet.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Kan het apparaat niet vinden.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Nie odnaleziono urządzenia.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>O dispositivo não foi encontrado.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Устройство не найдено.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Enheten hittades inte.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Cihaz bulunamadı.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>没有找到设备。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>未找到裝置。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_0x82000002">
+<tuv xml:lang="EN-US">
+<seg>The file was not found.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Soubor nebyl nalezen.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Die Datei wurde nicht gefunden.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>No se encontró el archivo.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Le fichier est introuvable.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>A fájl nem található.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>File non trovato.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>ファイルが見つかりませんでした。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>파일이 없습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Filen ble ikke funnet.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Kan het bestand niet vinden.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Nie odnaleziono pliku.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>O arquivo não foi encontrado.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Файл не найден.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Filen hittades inte.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Dosya bulunamadı.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>没有找到文件。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>未找到檔案。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_0x82000003">
+<tuv xml:lang="EN-US">
+<seg>The device is out of space.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>V zařízení není dostatek místa.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Auf dem Gerät ist nicht genügend Speicherplatz vorhanden.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>El dispositivo se quedó sin espacio.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Le dispositif est saturé.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Az eszközön nincs szabad tárterület.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Spazio esaurito sul dispositivo.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>デバイスの空き領域がありません。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>장치의 공간이 부족합니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Enheten er tom for plass.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Er is geen ruimte meer op het apparaat.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>W urządzeniu zabrakło miejsca.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Não há espaço no dispositivo.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Устройство недоступно.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Enheten har slut på utrymme.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Cihazda boş yer kalmadı.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>设备空间不足。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>裝置空間不足。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_0x82000004">
+<tuv xml:lang="EN-US">
+<seg>No network connection.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Není k dispozici připojení k síti.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Keine Netzwerkverbindung.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Sin conexión de red.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Aucune connexion réseau.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Nincs hálózati kapcsolat.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Nessuna connessione di rete.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>ネットワークに接続していません。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>네트워크에 연결되지 않았습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Ingen nettverkstilkobling.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Geen netwerkverbinding.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Brak połączenia sieciowego.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Não há conexão de rede.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Отсутствует сетевое подключение.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Ingen nätverksanslutning.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Ağ bağlantısı yok.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>无网络连接。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>沒有網路連線。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_0x82000005">
+<tuv xml:lang="EN-US">
+<seg>Access denied.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Přístup byl odepřen.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Zugriff verweigert.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Acceso denegado.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Accès refusé.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Hozzáférés megtagadva.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Accesso negato.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>アクセスが拒否されました。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>액세스가 거부되었습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Ingen tilgang.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Toegang geweigerd.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Odmowa dostępu.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Acesso negado.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Доступ запрещен.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Åtkomst nekad.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Erişim reddedildi.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>访问被拒绝。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>存取已遭拒絕。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_0x82000006">
+<tuv xml:lang="EN-US">
+<seg>The device is offline.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Zařízení je offline.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Das Gerät ist offline.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>El dispositivo no está conectado.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Le dispositif est hors ligne.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Az eszköz kapcsolat nélküli üzemmódban van.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Dispositivo non in linea.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>デバイスがオフラインです。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>장치가 오프라인입니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Enheten er frakoblet.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Het apparaat is offline.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Urządzenie jest w trybie offline.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>O dispositivo está off-line.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Устройство выключено.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Enheten är offline.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Cihaz çevrimdışı.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>设备处于脱机状态。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>裝置已經離線。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_0x82000007">
+<tuv xml:lang="EN-US">
+<seg>The file is in use.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Soubor je používán.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Die Datei wird verwendet.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>El archivo está en uso.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Le fichier est en cours d'utilisation.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>A fájl használatban van.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>File in uso.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>ファイルは使用中です。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>파일이 사용 중입니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Filen er i bruk.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Het bestand is in gebruik.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Plik jest używany.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>O arquivo está sendo usado.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Файл уже используется.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Filen används.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Dosya kullanımda.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>文件已在使用。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>檔案正在使用中。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_0x82000008">
+<tuv xml:lang="EN-US">
+<seg>The client has asked for a portion of the file, but the server cannot supply that portion.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Klient si vyžádal část souboru, avšak server nemůže tuto část dodat.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Der Client hat einen Teil der Datei angefordert, der Server kann den betreffenden Teil jedoch nicht bereitstellen.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>El cliente ha pedido una parte del archivo, pero el servidor no puede proporcionar esa parte.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Le client a demandé une partie du fichier, mais le serveur ne peut pas la fournir.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>A kliens a fájl egy részét kérte, a kiszolgáló azonban ezt nem tudta elérhetővé tenni.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Il client richiede una porzione del file, ma il server non è in grado di fornire tale porzione.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>クライアントはファイルの一部分を要求していますが、サーバーからその部分を配信できません。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>클라이언트에서 파일의 일부를 요청했지만 서버에서 해당 부분을 제공할 수 없습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Klienten har bedt om en del av filen, men serveren kan ikke levere den delen.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>De client heeft om een deel van het bestand gevraagd, maar de server kan dat deel niet leveren.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Klient poprosił o fragment pliku, ale serwer nie może dostarczyć tego fragmentu.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>O cliente solicitou parte do arquivo, mas o servidor não pode fornecê-la.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Клиент запросил часть файла, однако сервер не может ее передать.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Kunden har begärt en del av filen, men servern kan inte leverera den delen.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>İstemci dosyanın bir kısmını istedi ancak sunucu o kısmı sağlayamıyor.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>客户端要求此文件的一部分，但服务器无法提供该部分。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>用戶端已要求取得部份檔案，但伺服器無法提供該部分檔案。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_0x82000009">
+<tuv xml:lang="EN-US">
+<seg>The server timed out waiting for the request.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Vypršel časový interval serveru při čekání na požadavek.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Das Zeitlimit des Servers beim Warten auf die Anforderung wurde überschritten.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Se agotó el tiempo de espera del servidor esperando la solicitud.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Le délai imparti au serveur s'est écoulé pendant l'attente de la demande.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>A kiszolgáló túllépte a kérésre való várakozás időkorlátját.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Tempo scaduto per il server in attesa della richiesta.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>要求を待つ間にサーバーがタイムアウトしました。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>서버가 요청을 기다리는 동안 시간 초과되었습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Serveren ble tidsavbrutt mens den ventet på forespørselen.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Er is een time-out op de server opgetreden tijdens het wachten op het verzoek.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Podczas oczekiwania na żądanie upłynął limit czasu serwera.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>O servidor alcançou o tempo limite aguardando a solicitação.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Превышено время ожидания сервера.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Servern med timeout väntar på begäran.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Sunucu, istek için beklerken zaman aşımına uğradı.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>服务器等待请求超时。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>伺服器等候要求時已經逾時。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_0x8200000A">
+<tuv xml:lang="EN-US">
+<seg>The request cannot be fulfilled due to bad syntax.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Požadavek nelze splnit z důvodu chybné syntaxe.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Die Anforderung kann aufgrund einer fehlerhaften Syntax nicht verarbeitet werden.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>La solicitud no se puede cumplir debido a una sintaxis incorrecta.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>La demande ne peut pas être satisfaite en raison d'une erreur de syntaxe.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>A kérés helytelen szintaxis miatt nem teljesíthető.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Impossibile eseguire la richiesta. Sintassi errata.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>構文が正しくないため、要求を処理できませんでした。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>잘못된 구문으로 인해 요청을 수행할 수 없습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Forespørselen kan ikke oppfylles på grunn av dårlig syntaks.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Er kan niet worden voldaan aan het verzoek wegens onjuiste syntaxis.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Nie można wykonać żądania z powodu błędnej składni.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Não é possível atender a solicitação devido a erro na sintaxe.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Не удается выполнить запрос из-за неверного синтаксиса.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Begäran kan inte uppfyllas på grund av dålig syntax.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Hatalı sözdizimi nedeniyle istek yerine getirilemiyor.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>由于语法错误，无法满足请求。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>由於語法錯誤，所以無法完成要求。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_0x8200000B">
+<tuv xml:lang="EN-US">
+<seg>A request was made of a resource using a request method not supported by that resource.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Byl odeslán požadavek na zdroj prostřednictvím metody požadavku, která není podporována tímto zdrojem.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Eine Ressource wurde mit einer Anforderungsmethode angefordert, die von der betreffenden Ressource nicht unterstützt wird.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Se ha realizado la solicitud de un recurso utilizando un método de solicitud que no admite ese recurso.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Une ressource a été demandée avec une méthode non prise en charge par cette ressource.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Az erőforrás nem támogatja az erőforráskérés által használt kérelmi metódust.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>È stata richiesta una risorsa che utilizza un metodo di richiesta non supportato dalla risorsa.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>リソースが要求されましたが、使用された要求方法はそのリソースではサポートされていません。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>지원되지 않는 요청 방법을 사용하여 리소스에서 요청을 수행했습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>En ressurs ble forespurt med en forespørselsmetode som ikke støttes av ressursen.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Er is een verzoek om een bron ingediend met behulp van een methode die niet wordt ondersteund door die bron.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Przesłano żądanie dotyczące zasobu przy użyciu metody żądania nieobsługiwanej przez ten zasób.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Uma solicitação foi composta por um recurso usando um método de solicitação não suportado pelo recurso em questão.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Метод запроса ресурса не поддерживается.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>En begäran gjordes av en resurs med en förfrågningsmetod som inte stöds av denna resurs.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Bir kaynak tarafından desteklenmeyen bir istek yöntemi kullanılarak o kaynak için istekte bulunuldu.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>请求是由某个资源通过使用该资源不支持的请求方法而创建的。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>資源不支援提出要求的方式，所以無法向資源提出要求。</seg>
+</tuv>
+</tu>
+		<!-- 500 - InternalServerError -->
+<tu tuid="ERROR_0x8200000C">
+<tuv xml:lang="EN-US">
+<seg>Unknown internal server error.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Neznámá interní chyba serveru.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Unbekannter interner Serverfehler.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Error interno del servidor desconocido.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Erreur interne du serveur inconnue.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Ismeretlen belső kiszolgálóhiba.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Errore di server interno sconosciuto.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>不明な内部サーバー エラー。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>알 수 없는 내부 서버 오류입니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Ukjent intern serverfeil.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Onbekende interne serverfout.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Nieznany wewnętrzny błąd serwera.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Erro interno desconhecido de servidor.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Неизвестная внутренняя ошибка сервера.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Okänt internt serverfel.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Bilinmeyen dahili sunucu hatası.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>未知的内部服务器错误。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>內部伺服器發生不明錯誤。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_0x8200000D">
+<tuv xml:lang="EN-US">
+<seg>Access denied.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Přístup byl odepřen.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Zugriff verweigert.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Acceso denegado.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Accès refusé.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Hozzáférés megtagadva.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Accesso negato.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>アクセスが拒否されました。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>액세스가 거부되었습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Ingen tilgang.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Toegang geweigerd.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Odmowa dostępu.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Acesso negado.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Доступ запрещен.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Åtkomst nekad.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Erişim reddedildi.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>访问被拒绝。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>存取已遭拒絕。</seg>
+</tuv>
+</tu>
+		<!-- 401 - Unauthorized -->
+<tu tuid="ERROR_0x80070005">
+<tuv xml:lang="EN-US">
+<seg>Unauthorized.  Invalid user name or password.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Neověřeno. Neplatné uživatelské jméno nebo heslo.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Nicht autorisiert. Ungültiger Benutzername oder ungültiges Passwort.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>No autorizado. Nombre de usuario o contraseña no válidos.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Non autorisé. Nom d'utilisateur ou mot de passe non valide.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Jogosulatlan. Érvénytelen felhasználónév vagy jelszó.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Senza autorizzazione. Nome utente o password non validi.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>権限がありません。 ユーザー名またはパスワードが無効です。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>권한이 없습니다. 잘못된 사용자 이름 및 암호.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Uautorisert. Ugyldig brukernavn eller passord.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Niet geautoriseerd. Ongeldige gebruikersnaam of wachtwoord.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Brak autoryzacji. Nieprawidłowa nazwa użytkownika lub hasło.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Não autorizado. O nome de usuário ou senha são inválidos.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Недостаточно прав. Недопустимое имя пользователя или пароль.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Obehörig. Ogiltigt användarnamn eller lösenord.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Yetkisiz. Geçersiz kullanıcı adı veya parola.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>未经许可。 用户名或密码无效。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>未授權。 使用者名稱或密碼無效。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_0x90001001">
+<tuv xml:lang="EN-US">
+<seg>The share ‘%1$@’ on ‘%2$@’ has been deleted.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Sdílená složka „%1$@“ v zařízení „%2$@“ byla odstraněna.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Die Freigabe '%1$@' auf '%2$@' wurde gelöscht.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Se ha eliminado el archivo compartido ‘%1$@’ en ‘%2$@’.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Le dossier partagé ‘%1$@’ se trouvant sur ‘%2$@’ a été supprimé.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Törlődött a(z) „%2$@” helyen a(z) „%1$@” megosztás.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>La condivisione '%1$@' in '%2$@' è stata eliminata.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>‘%2$@’ の共有 ‘%1$@’ が削除されました。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>‘%2$@’의 공유 ‘%1$@’가 삭제되었습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Delt ressurs ‘%1$@’ på ‘%2$@’ har blitt slettet.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>De share '%1$@' op '%2$@' is verwijderd.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Udział „%1$@” na urządzeniu „%2$@” został usunięty.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>O compartilhamento '%1$@' em '%2$@' foi excluído.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Ресурс «%1$@» на устройстве «%2$@» был удален.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Resursen '%1$@' på '%2$@' har tagits bort.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>‘%2$@’ üzerindeki paylaşım ‘%1$@’ silindi.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>“%2$@”上的共享“%1$@”已删除。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>「%2$@」上的共享「%1$@」已刪除。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_Success">
+<tuv xml:lang="EN-US">
+<seg>Success.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Úspěch.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Erfolg.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Correcto.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Réussite.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Sikerült.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Operazione riuscita.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>成功。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>성공하였습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Vellykket.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Geslaagd.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Zadanie wykonane pomyślnie.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Concluído.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Выполнено.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Lyckades.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Başarılı.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>成功。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>成功。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_Unknown">
+<tuv xml:lang="EN-US">
+<seg>Unknown error.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Neznámá chyba.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Unbekannter Fehler.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Error desconocido.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Erreur inconnue.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Ismeretlen hiba.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Errore sconosciuto.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>不明なエラー。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>알 수 없는 오류입니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Ukjent feil.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Onbekende fout.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Nieznany błąd.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Erro desconhecido.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Неизвестная ошибка.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Okänt fel.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Bilinmeyen hata.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>未知错误。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>未知的錯誤。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_LockViolation">
+<tuv xml:lang="EN-US">
+<seg>File is locked or being used by another application.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Soubor je uzamčen nebo je používán jinou aplikací.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Die Datei ist gesperrt oder wird von einer anderen Anwendung verwendet.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>El archivo está bloqueado o siendo utilizado por otra aplicación.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Le fichier est verrouillé ou utilisé par une autre application.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>A fájl zárolva van, vagy egy másik alkalmazás használja.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Il file è bloccato o è in uso da un'altra applicazione.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>ファイルがロックされているか、別のアプリケーションで使用されています。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>파일이 잠겨있거나 다른 응용 프로그램이 사용하고 있습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Filen er låst eller brukes av et annet program.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Bestand is vergrendeld of wordt gebruikt door een andere toepassing.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Plik jest zablokowany lub używany przez inną aplikację.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>O arquivo está bloqueado ou sendo usado por outro aplicativo.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Файл заблокирован или используется другим приложением.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Filen är låst eller används av ett annat program.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Dosya kilitli veya başka bir uygulama tarafından kullanılıyor.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>文件锁定或正由另一个应用程序使用。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>檔案已鎖定，或正由其他應用程式使用中。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_DiskFull">
+<tuv xml:lang="EN-US">
+<seg>Out of storage.  The device is full.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Nedostatek úložného prostoru. Zařízení je plné.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Kein Speicherplatz mehr verfügbar. Das Gerät ist voll.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Fuera de almacenamiento. El dispositivo está completo.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Mémoire insuffisante. Le dispositif est plein.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Nincs szabad tárhely. Az eszköz megtelt.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Superato limite di archiviazione. Il dispositivo è pieno.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>領域不足。 デバイスが満杯です。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>용량이 초과되었습니다. 이 장치는 가득찼습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Tom for lagringsplass. Enheten er full.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Geen opslagruimte meer. Het apparaat is vol.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Za mało miejsca na dysku. Urządzenie jest zapełnione.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Fora do armazenamento. O dispositivo está cheio.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Недостаточно места для хранения. Устройство заполнено.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Utrymmet har tagit slut. Enheten är full.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Depolama alanı dolu. Aygıt dolu.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>存储空间不足。 设备已满。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>儲存空間不足。 裝置已滿。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_DeviceNotFound">
+<tuv xml:lang="EN-US">
+<seg>The device either offline, powered off, or disconnected from the network.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Zařízení je buď offline, vypnuté nebo odpojené od sítě.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Das Gerät ist entweder offline, ausgeschaltet oder vom Netzwerk getrennt.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>El dispositivo está desconectado, apagado o desconectado de la red.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Le dispositif est hors connexion, éteint ou déconnecté du réseau.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Az eszköz nem kapcsolódik az internethez, ki van kapcsolva, vagy le van választva a hálózatról.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Il dispositivo è offline, spento oppure disconnesso dalla rete.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>デバイスがオフライン、電源オフ、またはネットワークから切断された状態です。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>해당 장치는 오프라인이거나 전원이 꺼졌거나 네트워크 연결이 해제되었습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Enheten er enten frakoblet, uten strøm, eller koblet fra nettverket.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Het apparaat is offline, uitgeschakeld of losgekoppeld van het netwerk.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Urządzenie jest w trybie offline, wyłączone lub odłączone od sieci.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>O dispositivo pode estar off-line, desligado ou desconectado da rede.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Устройство работает в автономном режиме, отключено от сети питания или от домашней сети.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Enheten är antingen offline, avstängd eller inte ansluten till nätverket.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Aygıt çevrimdışı, kapatıldı veya ağ bağlantısı kesildi.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>设备脱机、关闭或已从网络上断开。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>裝置已離線、關閉電源或中斷網路連線。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_ConnectionError">
+<tuv xml:lang="EN-US">
+<seg>Cannot connect to device.  Please check your device or network connection.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Nelze se připojit k zařízení. Zkontrolujte zařízení nebo připojení k síti.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Verbindung zum Gerät nicht möglich. Überprüfen Sie die Netzwerkverbindung des Geräts.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>No se puede conectar con el dispositivo. Compruebe el dispositivo o la conexión de red.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Impossible de se connecter au dispositif. Veuillez vérifier votre dispositif ou votre connexion réseau.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Nem lehet kapcsolódni az eszközhöz. Ellenőrizze az eszközt vagy a hálózati kapcsolatot.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Impossibile connettersi al dispositivo. Controllare il dispositivo o la connessione di rete.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>デバイスに接続できません。 デバイスまたはネットワーク接続を確認してください。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>장치에 연결할 수 없습니다. 장치 또는 네트워크 연결을 점검해 주십시오.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Kan ikke koble til enheten. Kontroller enheten eller nettverkstilkoblingen.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Kan geen verbinding maken met apparaat. Controleer uw apparaat of netwerkverbinding.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Nie można nawiązać połączenia z urządzeniem. Sprawdź połączenie sieciowe urządzenia.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Não é possível conectar ao dispositivo. Verifique o seu dispositivo ou conexão de rede.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Невозможно подключиться к устройству. Проверьте устройство или подключение к сети.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Det går inte att ansluta till enheten. Kontrollera enheten eller nätverksanslutningen.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Aygıt bağlantısı kurulamıyor. Lütfen aygıt veya ağ bağlantınızı denetleyin.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>无法连接到设备。 请检查设备或网络连接。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>無法連線至裝置。 請檢查您的裝置或網路連線。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_Timeout">
+<tuv xml:lang="EN-US">
+<seg>Timed out waiting for response.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Vypršel čas čekání na odezvu.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Zeitüberschreitung beim Warten auf eine Antwort.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Tiempo de espera para la respuesta agotado.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Expiration de délai en attente de la réponse.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Lejárt a válasz időkorlátja.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Timeout attesa risposta.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>応答の待機中にタイムアウトしました。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>응답 대기 시간이 초과되었습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Tidsavbrutt under venting på svar.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Tijd verlopen bij wachten op antwoord.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Upłynął limit czasu oczekiwania na odpowiedź.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Tempo limite atingido para aguardar a solicitação.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Превышено время ожидания ответа.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Timeout inträffade i väntar på svar.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Yanıt bekleme süresi doldu.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>等待响应超时。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>等候回應已逾時。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_InvalidArgument">
+<tuv xml:lang="EN-US">
+<seg>Invalid argument.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Neplatný argument.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Ungültiges Argument.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Argumento no válido.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Argument non valide.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Érvénytelen argumentum.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Argomento non valido.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>無効な引数。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>인수가 유효하지 않습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Ugyldig argument.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Ongeldig argument.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Nieprawidłowy argument.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Argumento inválido.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Недействительный аргумент.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Ogiltigt argument.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Geçersiz argüman.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>无效的参数。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>無效的引數。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_BadRequest">
+<tuv xml:lang="EN-US">
+<seg>Request not recognized.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Požadavek nebyl rozpoznán.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Anforderung nicht erkannt.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>No se reconoce la solicitud.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Demande non reconnue.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Nem észlelhető a kérés.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Richiesta non riconosciuta.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>要求が認識されません。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>요청이 인식되지 않았습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Ukjent forespørsel.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Verzoek niet herkend.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Żądanie nie zostało uznane.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Solicitação não reconhecida.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Запрос не распознан.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Begäran stöds inte.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>İstek tanınmıyor.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>未识别请求。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>無法識別要求。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_Unauthorized">
+<tuv xml:lang="EN-US">
+<seg>Unauthorized.  Invalid user name or password.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Neověřeno. Neplatné uživatelské jméno nebo heslo.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Nicht autorisiert. Ungültiger Benutzername oder ungültiges Passwort.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>No autorizado. Nombre de usuario o contraseña no válidos.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Non autorisé. Nom d'utilisateur ou mot de passe non valide.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Jogosulatlan. Érvénytelen felhasználónév vagy jelszó.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Senza autorizzazione. Nome utente o password non validi.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>権限がありません。 ユーザー名またはパスワードが無効です。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>권한이 없습니다. 잘못된 사용자 이름 및 암호.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Uautorisert. Ugyldig brukernavn eller passord.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Niet geautoriseerd. Ongeldige gebruikersnaam of wachtwoord.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Brak autoryzacji. Nieprawidłowa nazwa użytkownika lub hasło.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Não autorizado. O nome de usuário ou senha são inválidos.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Недостаточно прав. Недопустимое имя пользователя или пароль.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Obehörig. Ogiltigt användarnamn eller lösenord.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Yetkisiz. Geçersiz kullanıcı adı veya parola.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>未经许可。 用户名或密码无效。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>未授權。 使用者名稱或密碼無效。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_Forbidden">
+<tuv xml:lang="EN-US">
+<seg>Forbidden.  You do not have permission to perform the action.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Zakázáno. Nemáte oprávnění k provedení této akce.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Verboten. Sie sind nicht berechtigt, diese Aktion auszuführen.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Prohibido. No tiene permiso para realizar la acción.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Interdit. Vous n'êtes pas autorisé à effectuer cette action.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Nem engedélyezett. Nincs engedélye a művelet végrehajtásához.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Operazione non consentita. Non si dispone delle autorizzazioni per eseguire l'azione.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>禁止されています。 操作を実行する権限がありません。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>금지됨 동작을 수행할 권한이 없습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Forbudt. Du har ikke tillatelse til å utføre denne handlingen.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Verboden. U hebt geen toestemming om deze handeling uit te voeren.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Dostęp wzbroniony. Nie masz uprawnień do wykonania tej akcji.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Proibido. Você não tem permissão para executar a ação.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Запрещено. У вас нет прав на выполнение этого действия.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Förbjuden. Du är inte behörig att utföra åtgärden.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Yasak. İşlemi gerçekleştirme izniniz yok.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>禁止。 您无权执行操作。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>禁止。 您沒有執行此動作的權限。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_NotFound">
+<tuv xml:lang="EN-US">
+<seg>Path not found.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Cesta nebyla nalezena.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Pfad wurde nicht gefunden.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Ruta no encontrada.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Chemin d'accès introuvable.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Az útvonal nem található.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Percorso non trovato.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>パスが見つかりません。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>경로가 없습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Banen ble ikke funnet.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Pad niet gevonden.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Nie odnaleziono ścieżki.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>O caminho não foi encontrado.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Путь не найден.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Det gick inte att hitta sökvägen.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Yol bulunamadı.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>未找到路径。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>無法找到路徑。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_MethodNotAllowed">
+<tuv xml:lang="EN-US">
+<seg>The request is not supported.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Tento požadavek není podporován.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Die Anforderung wird nicht unterstützt.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>No se admite esta solicitud.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>La demande n'est pas prise en charge.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Nem támogatott a kérés.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>La richiesta non è supportata.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>この要求はサポートされていません。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>해당 요청은 지원되지 않습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Forespørselen støttes ikke.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Het verzoek wordt niet ondersteund.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Żądanie jest nieobsługiwane.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>A solicitação não pode ser atendida.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Запрос не поддерживается.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Begäran stöds inte.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>İstek desteklenmiyor.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>不支持该请求。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>不支援此要求。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_OutOfRange">
+<tuv xml:lang="EN-US">
+<seg>Value is out of range.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Hodnota je mimo rozsah.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Wert liegt außerhalb des zulässigen Bereichs.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>El valor está fuera del intervalo.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>La valeur se trouve hors de l'intervalle.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Az érték a tartományon kívülre esik.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Il valore non rientra nell'intervallo.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>値が範囲外です。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>값이 유효한 범위를 벗어났습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Verdi utenfor tillatt område.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Waarde buiten bereik.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Wartość jest spoza zakresu.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Valor está fora da faixa.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Значение за пределами диапазона.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Värdet är utanför intervallet.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Değer aralık dışında.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>值超出范围。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>值超出範圍。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_InternalServerError">
+<tuv xml:lang="EN-US">
+<seg>The server encountered an unexpected error.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Na serveru došlo k neočekávané chybě.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Auf dem Server ist ein unerwarteter Fehler aufgetreten.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>El servidor encontró un error inesperado.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Le serveur a rencontré une erreur inattendue.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>A kiszolgáló váratlan hibába ütközött.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Si è verificato un errore imprevisto nel server.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>サーバーで予期しないエラーが発生しました。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>해당 서버에서 예상하지 못한 오류가 발생하였습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Serveren fikk en uventet feil.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>De server heeft een onverwachte fout ondervonden.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Serwer napotkał nieoczekiwany błąd.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>O servidor encontrou um erro inesperado.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Произошла непредвиденная ошибка сервера.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Ett oväntat fel inträffade för servern.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Sunucu beklenmeyen bir hatayla karşılaştı.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>服务器遇到意外错误。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>伺服器發生意外錯誤。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_0x8200000E">
+<tuv xml:lang="EN-US">
+<seg>Invalid argument.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Neplatný argument.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Ungültiges Argument.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Argumento no válido.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Argument non valide.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Érvénytelen argumentum.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Argomento non valido.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>無効な引数。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>인수가 유효하지 않습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Ugyldig argument.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Ongeldig argument.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Nieprawidłowy argument.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Argumento inválido.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Недействительный аргумент.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Ogiltigt argument.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Geçersiz argüman.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>无效的参数。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>無效的引數。</seg>
+</tuv>
+</tu>
+<tu tuid="ERROR_0x8200000F">
+<tuv xml:lang="EN-US">
+<seg>The journal entry has been deleted from the journal.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Položka žurnálu byla odstraněna ze žurnálu.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Der Journaleintrag wurde aus dem Journal gelöscht.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>La entrada del historial de cambios se ha eliminado del historial de cambios.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>L'entrée a été supprimée du journal.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>A naplóbejegyzés törölve lett a naplóból.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>La voce del diario è stata eliminata dal diario.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>ジャーナル エントリは既にジャーナルから削除されています。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>변경 내역에서 변경 내역 항목이 삭제되었습니다.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Loggoppføringen har blitt slettet fra endringsloggen</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Het logboekonderdeel is verwijderd uit het logboek.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Wpis dziennika został z niego usunięty.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>A entrada do histórico de alterações foi excluída do histórico.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Запись журнала удалена.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Journalposten har tagits bort från journalen.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Günlük girişi günlükten silinmiş.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>已从日记中删除该日记条目。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>日誌項目已自日誌中刪除。</seg>
+</tuv>
+</tu>
+<tu tuid="OK_btn">
+<tuv xml:lang="EN-US">
+<seg>OK</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>OK</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>OK</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Aceptar</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>OK</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>OK</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>OK</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>OK</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>확인</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>OK</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>OK</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>OK</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>OK</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>ОК</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>OK</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Tamam</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>确定</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>確定</seg>
+</tuv>
+</tu>
+<tu tuid="CANCEL_btn">
+<tuv xml:lang="EN-US">
+<seg>Cancel</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Zrušit</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Abbrechen</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Cancelar</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Annuler</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Mégse</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Annulla</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>キャンセル</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>취소</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Avbryt</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Annuleren</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Anuluj</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Cancelar</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Отмена</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Avbryt</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>İptal</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>取消</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>取消</seg>
+</tuv>
+</tu>
+<tu tuid="FOLDERBROWSER_win">
+<tuv xml:lang="EN-US">
+<seg>Browse for Folder</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Procházením vyhledat složku</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Ordner suchen</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Buscar carpeta</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Rechercher le dossier</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Mappa keresése</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Cerca cartella</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>一覧からフォルダを探す</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>폴더 찾아보기</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Bla etter mappe</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Bladeren naar map</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Przeglądaj w poszukiwaniu folderu</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Procurar pasta</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Открыть папку</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Bläddra efter mapp</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Klasör için Tarama Yap</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>浏览文件夹</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>瀏覽資料夾</seg>
+</tuv>
+</tu>
+<tu tuid="FOLDERBROWSER_SAVEAS_win">
+<tuv xml:lang="EN-US">
+<seg>Save As</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Uložit jako</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Speichern unter</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Guardar como</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Enregistrer sous</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Mentés másként</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Salva come</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>別名で保存</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>다른 이름으로 저장</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Lagre som</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Opslaan als</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Zapisz jako</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Salvar como</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Сохранить как</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Spara som</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Farklı Kaydet</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>另存为</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>另存新檔</seg>
+</tuv>
+</tu>
+<tu tuid="FOLDERBROWSER_NEWFOLDER_btn">
+<tuv xml:lang="EN-US">
+<seg>New Folder</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Nová složka</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Neuer Ordner</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Nueva carpeta</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Nouveau dossier</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Új mappa</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Nuova cartella</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>新規フォルダ</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>새 폴더</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Ny mappe</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Nieuwe map</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Nowy folder</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Nova pasta</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Новая папка</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Ny mapp</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Yeni Klasör</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>新建文件夹</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>新增資料夾</seg>
+</tuv>
+</tu>
+<tu tuid="FOLDERBROWSER_SELECTFOLDER_btn">
+<tuv xml:lang="EN-US">
+<seg>Select Folder</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Vybrat složku</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Ordner wählen</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Seleccionar carpeta</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Sélectionner le dossier</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Mappa kiválasztása</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Seleziona cartella</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>フォルダを選択</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>폴더 선택</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Velg mappe</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Map selecteren</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Wybierz folder</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Selecionar pasta</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Выбрать папку</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Välj mapp</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Klasör Seç</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>选择文件夹</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>選擇資料夾</seg>
+</tuv>
+</tu>
+<tu tuid="FOLDERBROWSER_SELECTEDFOLDER_lbl">
+<tuv xml:lang="EN-US">
+<seg>Selected Folder:</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Vybraná složka:</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Ausgewählter Ordner:</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Carpeta seleccionada:</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Dossier sélectionné :</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Kiválasztott mappa:</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Cartella selezionata:</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>選択したフォルダ:</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>선택된 폴더:</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Valgt mappe:</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Geselecteerde map:</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Wybrany folder:</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Pasta selecionada:</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Выбранная папка:</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Vald mapp:</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Seçilen Klasör:</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>选定的文件夹：</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>已選資料夾：</seg>
+</tuv>
+</tu>
+<tu tuid="FOLDERBROWSER_SAVEASFOLDER_lbl">
+<tuv xml:lang="EN-US">
+<seg>Folder Name:</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Název složky:</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Ordnername:</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Nombre de carpeta:</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Nom de dossier :</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Mappanév:</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Nome cartella:</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>フォルダ名:</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>폴더 이름:</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Mappenavn:</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Mapnaam:</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Nazwa folderu:</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Nome da pasta:</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Название папки:</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Mappnamn:</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Klasör Adı:</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>文件夹名称：</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>資料夾名稱：</seg>
+</tuv>
+</tu>
+<tu tuid="FOLDERBROWSER_MAKENEWFOLDER_hdr">
+<tuv xml:lang="EN-US">
+<seg>Make New Folder</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Vytvořit novou složku</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Neuen Ordner erstellen</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Crear nueva carpeta</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Créer un nouveau dossier</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Új mappa létrehozása</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Crea nuova cartella</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>新規フォルダを作成</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>새 폴더 만들기</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Lag ny mappe</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Nieuwe map maken</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Utwórz nowy folder</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Criar nova pasta</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Создать новую папку</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Skapa ny mapp</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Yeni Klasör Oluştur</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>新建文件夹</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>新增資料夾</seg>
+</tuv>
+</tu>
+<tu tuid="MAKENEWFOLDER_ENTERFOLDERNAME_inf">
+<tuv xml:lang="EN-US">
+<seg>Please enter a folder name.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Zadejte název složky.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Geben Sie einen Ordnernamen ein.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Introduzca un nombre de carpeta.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Saisissez un nom de dossier.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Adjon meg egy mappanevet.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Inserire un nome cartella.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>フォルダ名を入力してください。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>폴더 이름을 입력하십시오.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Angi et nytt mappenavn.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Voer een mapnaam in.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Wprowadź nazwę folderu.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Insira o nome da pasta.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Введите название папки.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Ange ett mappnamn.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Lütfen bir klasör adı girin.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>请输入文件夹名称。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>請輸入資料夾名稱。</seg>
+</tuv>
+</tu>
+<tu tuid="MAKENEWFOLDER_NEWFOLDER_lbl">
+<tuv xml:lang="EN-US">
+<seg>Enter a folder name to create under %1$@.</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Zadejte název složky pro vytvoření pod %1$@.</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Geben Sie den Namen des Ordners ein, der unter %1$@ erstellt werden soll.</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Introduzca un nombre de carpeta para crear en %1$@.</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Saisissez le nom du dossier à créer sous %1$@.</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Adja meg a(z) %1$@ mappában létrehozandó almappa nevét.</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Inserire un nome cartella da creare in %1$@.</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>%1$@ の下に作成するフォルダ名を入力してください。</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>%1$@ 아래에 만들 폴더 이름을 입력하십시오.</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Angi et mappenavn for å opprette under %1$@.</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Voer een mapnaam in om te maken onder %1$@.</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Wprowadź nazwę folderu do utworzenia w folderze %1$@.</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Insira o nome da pasta a ser criada em %1$@.</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Введите название папки, которую требуется создать в %1$@.</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Ange ett mappnamn att skapa under %1$@.</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>%1$@ altında oluşturmak için bir klasör adı girin.</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>输入要在 %1$@ 下创建的文件夹名称。</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>輸入資料夾名稱以於 %1$@ 中建立。</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_UNIT_BYTES">
+<tuv xml:lang="EN-US">
+<seg>bytes</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>bajtů</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Byte</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>bytes</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>octets</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>bájt</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>byte</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>バイト</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>바이트</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>bytes</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>bytes</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>B</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>bytes</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>байт</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>bytes</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>bayt</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>字节</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>位元</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_UNIT_KB">
+<tuv xml:lang="EN-US">
+<seg>KB</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>kB</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>KB</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>KB</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Ko</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>KB</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>KB</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>KB</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>KB</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>KB</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>kB</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>KB</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>KB</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Кб</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>KB</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>KB</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>KB</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>KB</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_UNIT_TB">
+<tuv xml:lang="EN-US">
+<seg>TB</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>TB</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>TB</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>TB</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>To</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>TB</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>TB</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>TB</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>TB</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>TB</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>TB</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>TB</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>TB</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Тб</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>TB</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>TB</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>TB</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>TB</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_UNIT_GB">
+<tuv xml:lang="EN-US">
+<seg>GB</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>GB</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>GB</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>GB</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Go</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>GB</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>GB</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>GB</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>GB</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>GB</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>GB</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>GB</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>GB</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Гб</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>GB</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>GB</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>GB</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>GB</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_UNIT_MB">
+<tuv xml:lang="EN-US">
+<seg>MB</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>MB</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>MB</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>MB</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Mo</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>MB</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>MB</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>MB</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>MB</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>MB</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>MB</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>MB</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>MB</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Мб</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>MB</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>MB</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>MB</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>MB</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_UNIT_KiBi">
+<tuv xml:lang="EN-US">
+<seg>Ki</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Ki</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Ki</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Ki</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Ki</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Ki</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Ki</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Ki</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Ki</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Ki</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>ki</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Ki</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Ki</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>КиБ</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Ki</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Ki</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Ki</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Ki</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_UNIT_MeBi">
+<tuv xml:lang="EN-US">
+<seg>Mi</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Mi</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Mi</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Mi</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Mi</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Mi</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Mi</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Mi</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Mi</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Mi</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Mi</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Mi</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Mi</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>МиБ</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Mi</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Mi</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Mi</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Mi</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_UNIT_GiBi">
+<tuv xml:lang="EN-US">
+<seg>Gi</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Gi</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Gi</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Gi</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Gi</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Gi</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Gi</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Gi</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Gi</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Gi</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Gi</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Gi</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Gi</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>ГиБ</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Gi</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Gi</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Gi</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Gi</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_UNIT_TeBi">
+<tuv xml:lang="EN-US">
+<seg>Ti</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Ti</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Ti</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Ti</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Ti</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Ti</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Ti</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Ti</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Ti</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Ti</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Ti</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Ti</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Ti</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>ТиБ</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Ti</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Ti</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Ti</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Ti</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_UNKNOWNWIN32NTWINDOWS">
+<tuv xml:lang="EN-US">
+<seg>Unknown Win32NT Windows</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Neznámý systém Win32NT Windows</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Unbekanntes Win32NT Windows</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Win32NT Windows desconocido</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Win32NT Windows inconnu</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Ismeretlen Win32NT Windows</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows Win32NT sconosciuto</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>不明な Win32NT Windows</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>알 수 없는 Win32NT Windows</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Ukjent Win32NT Windows</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Onbekende Win32NT Windows</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Nieznana wersja Windows Win32NT</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Win32NT Windows Desconhecido</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Неизвестная система Win32NT Windows</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Okänt Win32NT Windows</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Bilinmeyen Win32NT Windows</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>未知 Win32NT Windows</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>未知的 Win32NT Windows</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_UNKNOWNWIN32WINDOWS">
+<tuv xml:lang="EN-US">
+<seg>Unknown Win32 Windows</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Neznámý systém Win32 Windows</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Unbekanntes Win32 Windows</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Win32 Windows desconocido</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Win32 Windows inconnu</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Ismeretlen Win32 Windows</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows Win32 sconosciuto</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>不明な Win32 Windows</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>알 수 없는 Win32 Windows</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Ukjent Win32 Windows</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Onbekende Win32 Windows</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Nieznana wersja Windows Win32</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Win32 Windows Desconhecido</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Неизвестная система Win32 Windows</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Okänt Win32 Windows</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Bilinmeyen Win32 Windows</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>未知 Win32 Windows</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>未知的 Win32 Windows</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_WINDOWS2000">
+<tuv xml:lang="EN-US">
+<seg>Windows 2000</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Windows 2000</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Windows 2000</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Windows 2000</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Windows 2000</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Windows 2000</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows 2000</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Windows 2000</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Windows 2000</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Windows 2000</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Windows 2000</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Windows 2000</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Windows 2000</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Windows 2000</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Windows 2000</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Windows 2000</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Windows 2000</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Windows 2000</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_WINDOWS2003">
+<tuv xml:lang="EN-US">
+<seg>Windows 2003</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Windows 2003</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Windows 2003</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Windows 2003</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Windows 2003</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Windows 2003</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows 2003</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Windows 2003</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Windows 2003</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Windows 2003</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Windows 2003</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Windows 2003</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Windows 2003</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Windows 2003</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Windows 2003</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Windows 2003</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Windows 2003</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Windows 2003</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_WINDOWS32LAYER">
+<tuv xml:lang="EN-US">
+<seg>Windows 32 Layer</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Vrstva Windows 32</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Windows 32 Layer</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Windows 32 Layer</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Couche Windows 32</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Windows 32 Layer</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows 32 Layer</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Windows 32 Layer</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Windows 32 Layer</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Windows 32-lag</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Windows 32 Layer</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Warstwa Windows 32</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Windows 32 Layer</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Windows 32 Layer</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Windows 32-skikt</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Windows 32 Katmanı</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Windows 32 层</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Windows 32 層</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_WINDOWS7">
+<tuv xml:lang="EN-US">
+<seg>Windows 7</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Windows 7</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Windows 7</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Windows 7</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Windows 7</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Windows 7</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows 7</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Windows 7</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Windows 7</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Windows 7</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Windows 7</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Windows 7</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Windows 7</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Windows 7</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Windows 7</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Windows 7</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Windows 7</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Windows 7</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_WINDOWS95">
+<tuv xml:lang="EN-US">
+<seg>Windows 95</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Windows 95</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Windows 95</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Windows 95</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Windows 95</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Windows 95</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows 95</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Windows 95</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Windows 95</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Windows 95</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Windows 95</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Windows 95</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Windows 95</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Windows 95</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Windows 95</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Windows 95</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Windows 95</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Windows 95</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_WINDOWS98">
+<tuv xml:lang="EN-US">
+<seg>Windows 98</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Windows 98</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Windows 98</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Windows 98</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Windows 98</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Windows 98</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows 98</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Windows 98</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Windows 98</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Windows 98</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Windows 98</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Windows 98</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Windows 98</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Windows 98</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Windows 98</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Windows 98</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Windows 98</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Windows 98</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_WINDOWS98SECONDEDITION">
+<tuv xml:lang="EN-US">
+<seg>Windows 98 Second Edition</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Windows 98 Second Edition</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Windows 98 Second Edition</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Windows 98 Segunda edición</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Windows 98 Deuxième Édition</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Windows 98 Second Edition</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows 98 Second Edition</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Windows 98 Second Edition</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Windows 98 Second Edition</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Windows 98 Second Edition</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Windows 98 Second Edition</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Windows 98 Second Edition</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Windows 98 Second Edition</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Windows 98 Second Edition</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Windows 98 Second Edition</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Windows 98 Second Edition</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Windows 98 Second Edition</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Windows 98 Second Edition</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_WINDOWSCOMPACTEDITION">
+<tuv xml:lang="EN-US">
+<seg>Windows Compact Edition</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Windows Compact Edition</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Windows Compact Edition</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Windows Compact Edition</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Windows Compact Edition</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Windows Compact Edition</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows Compact Edition</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Windows Compact Edition</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Windows Compact Edition</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Windows Compact Edition</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Windows Compact Edition</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Windows Compact Edition</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Windows Compact Edition</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Windows Compact Edition</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Windows Compact Edition</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Windows Compact Edition</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Windows Compact Edition</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Windows Compact Edition</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_WINDOWSHOMESERVER">
+<tuv xml:lang="EN-US">
+<seg>Windows Home Server</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Windows Home Server</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Windows Home Server</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Windows Home Server</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Windows Home Server</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Windows Home Server</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows Home Server</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Windows Home Server</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Windows Home Server</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Windows Home Server</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Windows Home Server</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Windows Home Server</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Windows Home Server</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Windows Home Server</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Windows Home Server</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Windows Home Server</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Windows Home Server</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Windows Home Server</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_WINDOWSME">
+<tuv xml:lang="EN-US">
+<seg>Windows ME</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Windows ME</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Windows ME</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Windows ME</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Windows ME</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Windows ME</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows ME</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Windows ME</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Windows ME</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Windows ME</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Windows ME</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Windows ME</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Windows ME</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Windows ME</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Windows ME</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Windows ME</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Windows ME</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Windows ME</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_WINDOWSNT351">
+<tuv xml:lang="EN-US">
+<seg>Windows NT 3.51</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Windows NT 3.51</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Windows NT 3.51</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Windows NT 3.51</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Windows NT 3.51</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Windows NT 3.51</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows NT 3.51</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Windows NT 3.51</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Windows NT 3.51</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Windows NT 3.51</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Windows NT 3.51</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Windows NT 3.51</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Windows NT 3.51</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Windows NT 3.51</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Windows NT 3.51</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Windows NT 3.51</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Windows NT 3.51</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Windows NT 3.51</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_WINDOWSNT40">
+<tuv xml:lang="EN-US">
+<seg>Windows NT 4.0</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Windows NT 4.0</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Windows NT 4.0</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Windows NT 4.0</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Windows NT 4.0</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Windows NT 4.0</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows NT 4.0</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Windows NT 4.0</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Windows NT 4.0</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Windows NT 4.0</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Windows NT 4.0</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Windows NT 4.0</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Windows NT 4.0</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Windows NT 4.0</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Windows NT 4.0</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Windows NT 4.0</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Windows NT 4.0</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Windows NT 4.0</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_WINDOWSSERVER2003R2">
+<tuv xml:lang="EN-US">
+<seg>Windows Server 2003 R2</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Windows Server 2003 R2</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Windows Server 2003 R2</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Windows Server 2003 R2</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Windows Server 2003 R2</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Windows Server 2003 R2</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows Server 2003 R2</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Windows Server 2003 R2</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Windows Server 2003 R2</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Windows Server 2003 R2</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Windows Server 2003 R2</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Windows Server 2003 R2</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Windows Server 2003 R2</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Windows Server 2003 R2</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Windows Server 2003 R2</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Windows Server 2003 R2</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Windows Server 2003 R2</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Windows Server 2003 R2</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_WINDOWSSERVER2008">
+<tuv xml:lang="EN-US">
+<seg>Windows Server 2008</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Windows Server 2008</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Windows Server 2008</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Windows Server 2008</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Windows Server 2008</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Windows Server 2008</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows Server 2008</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Windows Server 2008</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Windows Server 2008</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Windows Server 2008</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Windows Server 2008</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Windows Server 2008</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Windows Server 2008</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Windows Server 2008</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Windows Server 2008</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Windows Server 2008</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Windows Server 2008</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Windows Server 2008</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_WINDOWSSERVER2008R2">
+<tuv xml:lang="EN-US">
+<seg>Windows Server 2008 R2</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Windows Server 2008 R2</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Windows Server 2008 R2</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Windows Server 2008 R2</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Windows Server 2008 R2</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Windows Server 2008 R2</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows Server 2008 R2</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Windows Server 2008 R2</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Windows Server 2008 R2</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Windows Server 2008 R2</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Windows Server 2008 R2</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Windows Server 2008 R2</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Windows Server 2008 R2</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Windows Server 2008 R2</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Windows Server 2008 R2</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Windows Server 2008 R2</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Windows Server 2008 R2</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Windows Server 2008 R2</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_WINDOWSVISTA">
+<tuv xml:lang="EN-US">
+<seg>Windows Vista</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Windows Vista</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Windows Vista</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Windows Vista</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Windows Vista</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Windows Vista</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows Vista</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Windows Vista</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Windows Vista</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Windows Vista</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Windows Vista</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Windows Vista</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Windows Vista</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Windows Vista</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Windows Vista</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Windows Vista</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Windows Vista</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Windows Vista</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_WINDOWSXP">
+<tuv xml:lang="EN-US">
+<seg>Windows XP</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Windows XP</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Windows XP</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Windows XP</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Windows XP</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Windows XP</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows XP</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Windows XP</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Windows XP</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Windows XP</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Windows XP</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Windows XP</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Windows XP</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Windows XP</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Windows XP</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Windows XP</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Windows XP</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Windows XP</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_WINDOWSXPMEDIACENTEREDITION">
+<tuv xml:lang="EN-US">
+<seg>Windows XP Media Center Edition</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Windows XP Media Center Edition</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Windows XP Media Center Edition</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Windows XP Media Center Edition</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Windows XP Édition Media Center</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Windows XP Media Center Edition</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows XP Media Center Edition</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Windows XP Media Center Edition</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Windows XP Media Center Edition</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Windows XP Media Center Edition</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Windows XP Media Center Edition</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Windows XP Media Center Edition</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Windows XP Media Center Edition</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Windows XP Media Center Edition</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Windows XP Media Center Edition</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Windows XP Media Center Edition</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Windows XP Media Center Edition</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Windows XP Media Center Edition</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_WINDOWSXPPROFESSIONAL">
+<tuv xml:lang="EN-US">
+<seg>Windows XP Professional</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Windows XP Professional</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Windows XP Professional</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Windows XP Professional</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Windows XP Professionnel</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Windows XP Professional</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows XP Professional</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Windows XP Professional</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Windows XP Professional</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Windows XP Professional</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Windows XP Professional</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Windows XP Professional</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Windows XP Professional</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Windows XP Professional</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Windows XP Professional</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Windows XP Professional</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Windows XP Professional</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Windows XP Professional</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_WINDOWS8">
+<tuv xml:lang="EN-US">
+<seg>Windows 8</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Windows 8</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Windows 8</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Windows 8</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Windows 8</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Windows 8</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows 8</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Windows 8</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Windows 8</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Windows 8</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Windows 8</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Windows 8</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Windows 8</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Windows 8</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Windows 8</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Windows 8</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Windows 8</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Windows 8</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_WINDOWS81">
+<tuv xml:lang="EN-US">
+<seg>Windows 8.1</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Windows 8.1</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Windows 8.1</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Windows 8.1</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Windows 8.1</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Windows 8.1</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows 8.1</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Windows 8.1</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Windows 8.1</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Windows 8.1</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Windows 8.1</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Windows 8.1</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Windows 8.1</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Windows 8.1</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Windows 8.1</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Windows 8.1</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Windows 8.1</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Windows 8.1</seg>
+</tuv>
+</tu>
+<tu tuid="GENERIC_OS_WINDOWSSERVER2012R2">
+<tuv xml:lang="EN-US">
+<seg>Windows Server 2012 R2</seg>
+</tuv>
+<tuv xml:lang="CS-CZ">
+<seg>Windows Server 2012 R2</seg>
+</tuv>
+<tuv xml:lang="DE-DE">
+<seg>Windows Server 2012 R2</seg>
+</tuv>
+<tuv xml:lang="ES-ES">
+<seg>Windows Server 2012 R2</seg>
+</tuv>
+<tuv xml:lang="FR-FR">
+<seg>Windows Server 2012 R2</seg>
+</tuv>
+<tuv xml:lang="HU-HU">
+<seg>Windows Server 2012 R2</seg>
+</tuv>
+<tuv xml:lang="IT-IT">
+<seg>Windows Server 2012 R2</seg>
+</tuv>
+<tuv xml:lang="JA-JP">
+<seg>Windows Server 2012 R2</seg>
+</tuv>
+<tuv xml:lang="KO-KR">
+<seg>Windows Server 2012 R2</seg>
+</tuv>
+<tuv xml:lang="NB-NO">
+<seg>Windows Server 2012 R2</seg>
+</tuv>
+<tuv xml:lang="NL-NL">
+<seg>Windows Server 2012 R2</seg>
+</tuv>
+<tuv xml:lang="PL-PL">
+<seg>Windows Server 2012 R2</seg>
+</tuv>
+<tuv xml:lang="PT-BR">
+<seg>Windows Server 2012 R2</seg>
+</tuv>
+<tuv xml:lang="RU-RU">
+<seg>Windows Server 2012 R2</seg>
+</tuv>
+<tuv xml:lang="SV-SE">
+<seg>Windows Server 2012 R2</seg>
+</tuv>
+<tuv xml:lang="TR-TR">
+<seg>Windows Server 2012 R2</seg>
+</tuv>
+<tuv xml:lang="ZH-CN">
+<seg>Windows Server 2012 R2</seg>
+</tuv>
+<tuv xml:lang="ZH-TW">
+<seg>Windows Server 2012 R2</seg>
+</tuv>
+</tu>
+</body>
+</tmx>
